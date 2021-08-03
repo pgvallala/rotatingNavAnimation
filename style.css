@@ -1,1 +1,46 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: lightskyblue;
+    color: lightseagreen;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    background-color: lightpink;
+    transform-origin: top-left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vw;
+    padding: 50px;
+}
+
+.container.show-nav {
+    transform: rotate(-18deg);
+}
+
+.circle-container {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.circle {
+    background-color: maroon;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+}
+
+.container.show-nav.circle{
+    transform: rotate(-60deg);
+}
+
